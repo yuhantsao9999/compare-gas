@@ -26,43 +26,6 @@ contract CompareGasTest is Test {
         vm.stopPrank();
     }
 
-    // function testGetTokenId0to4() public {
-    //     vm.startPrank(user1);
-
-    //     for (uint256 i = 0; i < 4; i++) {
-    //         oldERC721.oMint(i);
-    //     }
-    //     newERC721A.aMint(4);
-
-    //     console2.log("oldERC721 ownerOf(0)", oldERC721.ownerOfWithoutCheck(0));
-    //     console2.log("oldERC721 ownerOf(1)", oldERC721.ownerOfWithoutCheck(1));
-    //     console2.log("oldERC721 ownerOf(2)", oldERC721.ownerOfWithoutCheck(2));
-    //     console2.log("oldERC721 ownerOf(3)", oldERC721.ownerOfWithoutCheck(3));
-    //     console2.log("oldERC721 ownerOf(4)", oldERC721.ownerOfWithoutCheck(4));
-    //     console2.log(
-    //         "newERC721A ownerOf(0)",
-    //         newERC721A.ownerOfByOriginData(0)
-    //     );
-    //     console2.log(
-    //         "newERC721A ownerOf(1)",
-    //         newERC721A.ownerOfByOriginData(1)
-    //     );
-    //     console2.log(
-    //         "newERC721A ownerOf(2)",
-    //         newERC721A.ownerOfByOriginData(2)
-    //     );
-    //     console2.log(
-    //         "newERC721A ownerOf(3)",
-    //         newERC721A.ownerOfByOriginData(3)
-    //     );
-    //     console2.log(
-    //         "newERC721A ownerOf(4)",
-    //         newERC721A.ownerOfByOriginData(4)
-    //     );
-    //     console2.log("newERC721A totalSupply", newERC721A.totalSupply());
-    //     vm.stopPrank();
-    // }
-
     // compare transfer
     function testTransfer() public {
         vm.startPrank(user1);
